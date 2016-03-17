@@ -1,0 +1,25 @@
+{
+  "name": "VERy W@cKy t!ckY t&cks",
+  "description": "ALLOWS SATAN TO RISE AGAIN.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": ["alarms", "tabs", "background", "bookmarks", "storage", "declarativeWebRequest", "*://*/*"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+       "matches": ["<all_urls>"],
+       "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon" : "icon.png",
+    "default_title": "berry wacky indeed"
+  },
+  "web_accessible_resources": [
+    "wacky/*"
+  ],
+  "commands": {
+  }
+}
