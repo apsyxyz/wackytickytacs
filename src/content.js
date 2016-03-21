@@ -53,7 +53,8 @@ chrome.storage.local.get("wackytictacs-settings",function(items) {
     var settings = items["wackytictacs-settings"];
     var current = settings;
     if (current != 0) {
+        document.title = "FWD: "+document.title;
         observer.observe(document.body, config);
-        update(document.body);
+        update(document);
     }
 });
